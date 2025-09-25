@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/logo_white.svg" />
+    <!-- Logo d'onglet de Navigation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <!-- Police utilisé pour le Titre Principal-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/logo_black.svg" class="black"/>
+          <img src="images/logo_white.svg" class="white"/>
+        </div>
+      </a>
+
+      <!-- Barre de Navigation -->
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#propos">À Propos</a>
+        <a href="#escargots">Nos Escargots</a>
+        <a href="#calendrier">Calendrier</a>
+        <a href="#contacter">Contact</a>
+      </nav>
+
+      <!-- Bouton ☀️ / 🌙 -->
+      <div class="theme-switcher">
+        <input type="checkbox" id="nuit_jour"/>
+        <label for="nuit_jour" class="nuit_jour_label"></label>
+      </div>
+
+      <!-- Login -->
+      <a href="FormulaireInscription/FormulaireInscription.html">
+        <button class="login">Inscrivez-Vous</button>
+      </a>
+    </header>
+
+    <!-- Parallaxe -->
+    <div class="parallax" id="accueil">
+      <div class="titre">
+        <h1 class="titre_principal"><span>COME TO THE</span> SLOW GO SHOW!</h1>
+      </div>
+
+      <!-- Chaque Plan -->
+      <img class="parallax__loupe1" src="images/loupe1.svg" alt=""/>
+      <!-- Loupe Instrument -->
+      <img class="parallax__loupe2" src="images/loupe2.svg" alt=""/>
+      <!-- Loupe Contenu -->
+      <img class="parallax__back" src="images/background.svg" alt=""/>
+      <!-- Ciel -->
+      <img class="parallax__back2" src="images/background.svg" alt=""/>
+      <!-- Ciel Prolongement -->
+      <img class="parallax__first" src="images/first.svg" alt=""/>
+      <!-- Premier Plan (Forêt) -->
+      <img class="parallax__deuxieme" src="images/2nd.svg" alt=""/>
+      <!-- Second Plan (Arbres) -->
+      <img class="parallax__terril" src="images/terril.svg" alt=""/>
+      <!-- Arriere Plan (Terril) -->
+    </div>
+
+    <!-- Presentation -->
+    <section class="presentation" id="propos">
+      <h1>Historique :</h1>
+      <p>
+        Originaire du nord est voulant partager leur commune avec passion Slow
+        go show a pour objectif de faire découvrir le monde fabuleux des
+        escargots du célèbre terril de Saint-Henriette ! Inspirée de la célèbre
+        légende des turbos escargots, Slow go show propose des courses
+        d’escargot rassemblant une communautés engagées souhaitant perpétrer
+        cette tradition ! Envie de participer ? Habituer au sensation forte ou
+        voulant découvrir toute la ardeur de leurs courses endiabler ? Ramener
+        votre propre escargots du jardin où choisissez parmi notre large panel
+        d’escargot surentraînés ! Au programme ? Des courses d'escargots ayant
+        pour but de définir le nouveau roi de la bave ! Mais aussi différents
+        stand prévu pour la restauration. Sans oublier bien sur le activité de
+        découverte autour des gastéropodes.
+      </p>
+      <a href="PresentationEntreprise/PresentationEntreprise.html">
+        <button>A Propos</button>
+      </a>
+    </section>
+
+    <!-- Escargots Phares -->
+    <section class="escargots" id="escargots">
+      <!-- N°1 -->
+      <div class="escargot">
+        <img src="images/escargot2.svg" alt="Goliathocoque" title="Goliathocoque"/>
+        <h3>Goliathocoque</h3>
+        <p class="detail"> Le titan de l'arène n'a que faire de la course, son but : écraser la concurrence<br />
+          <a href="escargots.html">
+            <button>En Savoir Plus</button>
+          </a>
+        </p>
+      </div>
+
+      <!-- N°2 -->
+      <div class="escargot">
+        <img src="images/escargot4.svg" alt="Rodrygo" title="Rodrygo" />
+        <h3>Rodrygo</h3>
+        <p class="detail">
+          Surnomé L'éclair à ses début, Rodrygo est un as de la glisse. Après
+          études, sa bave à été défini comme 150% plus glissante que la moyenne
+          !<br /><a href="escargots.html"><button>En Savoir Plus</button></a>
+        </p>
+      </div>
+
+      <!-- N°3 -->
+      <div class="escargot">
+        <img src="images/escargot3.svg"
+          alt="Lady Escarlette"
+          title="Lady Escarlette"/>
+        <h3>Lady Escarlette</h3>
+        <p class="detail">
+          Reine des sous-bois, sans être la plus rapide, c'est la plus
+          intelligente et n'hesitera pas à s'en servir à son avantage !<br /><a
+            href="escargots.html"
+            ><button>En Savoir Plus</button></a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- Redirection vers tous les escargots (HTML)  -->
+    <div class="bouton_escargot">
+      <a href="Prestation/Prestation.html"> Voir Nos prestations</a>
+    </div>
+
+    <!-- Calendrier -->
+    <div class="calendrier" id="calendrier">
+      <h1>Prochaines courses</h1>
+      <ol>
+        <li>
+          <img src="images/neige.svg" title="Glissade des Héros" alt="neige"/>
+          <span>La Glissade des Héros</span>
+          <span>26 janvier 2025</span>
+        </li>
+        <li>
+          <img src="images/aout.svg" title="Sprint de Printemps" alt="aout"/>
+          <span>Le Sprint de Printemps</span>
+          <span>16 mars 2025</span>
+        </li>
+        <li>
+          <span>Les Escargots de Pâques</span>
+          <span>13 avril 2025</span>
+        </li>
+        <li>
+          <img src="images/muget.svg" title="Course des Muguets" alt="muget" />
+          <span>La Course des Muguets</span>
+          <span>4 mai 2025</span>
+        </li>
+        <li>
+          <img src="images/ete.svg" title="Solstice d'Été" alt="ete"/>
+          <span>Le Défi Solstice d'Été</span>
+          <span>8 juin 2025</span>
+        </li>
+        <li>
+          <span>Le Marathon des Champs</span>
+          <span>3 août 2025</span>
+          <img src="images/champs.svg" title="Marathon des Champs" alt="champs"/>
+        </li>
+        <li>
+          <img src="images/halloween.svg" title="Lanterne de la Terreur" alt="halloween" />
+          <span>La Lanterne de la Terreur</span>
+          <span>19 Octobre 2025</span>
+        </li>
+        <li>
+          <span>Escargots et Feuilles Tombantes</span>
+          <span>23 novembre 2025</span>
+        </li>
+        <li>
+          <img src="images/slalom.svg" title="Slalom des Coquilles Gelées" alt="slalom"/>
+          <span>Slalom des Coquilles Gelées</span>
+          <span>21 décembre 2025</span>
+        </li>
+        <li>
+          <img src="images/roi.svg" title="Coquille des Rois" alt="roi" />
+          <span>Coquille des Rois</span>
+          <span>4 janvier 2026</span>
+        </li>
+      </ol>
+    </div>
+    <div class="boutton_createur">
+      <a href="PresentationPatron/PresentationPatron.html">
+        Qui Somme Nous ?</a
+      >
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="haut-gauche" id="contacter">
+        <h2>Contactez - Nous !</h2>
+        <div class="Residence">
+          <a href="https://urlr.me/ce5WXz" target="_blank"
+            ><img class="localisation" src="images/localisation.svg" href="toto.html" alt="localisation"/>
+        </a>
+          <h3 class="emplacement">
+            <strong>Université de Lens, Département Informatique</strong
+            ><br />121 Rue de l'Université, 62100 Lens, France
+          </h3>
+        </div>
+        <div class="reseaux1">
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="insta" src="images/insta.svg" alt="insta"/></a>
+          <h3 class="Reseaux" id="iut">@slow_go_show_off</h3>
+          <br />
+        </div>
+        <div class="reseaux2">
+          <a href="https://www.facebook.com" target="_blank">
+            <img class="face" src="images/facebook.svg" alt="facebook"/>
+          </a>
+          <h3 class="Reseaux" id="iut2">@slow_go_show</h3>
+          <br />
+        </div>
+        <div class="reseaux3">
+          <a href="https://www.x.com" target="_blank">
+            <img class="x" src="images/x.svg" alt="x"/>
+          </a>
+          <h3 class="Reseaux" id="iut3">@slow_go_show_off​iciel</h3>
+        </div>
+      </div>
+
+      <div class="haut-droit">
+        <p id="gauche">
+          Qui<br />sera<br />
+          le<br />plus<br />
+          rapide
+        </p>
+        <img src="images/logo_white.svg" alt="logo_white"/>
+        <p id="droite">
+          Ou<br />plutot<br />
+          le<br />moins<br />
+          lent
+        </p>
+      </div>
+      <div class="bas-gauche">
+        <a href="FormulaireContact/FormulaireContact.html">
+          <img class="pixl_escargot" src="images/Designer.svg" alt="Designer"/>
+        </a>
+        <h3>
+          Formulaire <br />
+          de <br />
+          Contact <br />
+          en <br />
+          cliquant<br />
+          ici
+        </h3>
+      </div>
+
+      <div class="bas-droit">
+        <h2>Informations Légales:</h2>
+        <br />
+        <a href="Mentions_legales.html">Mentions Légales</a><br />
+        <a href="politique_confidentialite.html">Politique de Confidentialité</a
+        ><br />
+        <a href="politique_cookies.html">Politique en matière de cookies</a
+        ><br />
+        <a href="condition_g.html">Conditions générales d'utilisation</a><br />
+        <a href="droits_dauteur.html">Droits d'auteurs</a>
+      </div>
+    </div>
+
+    <!-- Modalité -->
+    <footer>
+      <p class="Modalite">
+        ⚠️ Cette page web a été réalisée uniquement dans un cadre
+        universitaire.<br />
+        Toute interprétation ou action basée sur un contenu réel ne serait que
+        fortuite. ⚠️
+      </p>
+      <h4 class="copyright">
+        Tous droits réservés<br />&copy; 2024 Slow Go Show
+      </h4>
+    </footer>
+
+    <!-- Script Js pour Effet parallaxe -->
+    <script>
+      const parallaxElements = document.querySelectorAll(
+        ".parallax__back, .parallax__back_nuit, .parallax__first, .parallax__deuxieme, .parallax__terril, .parallax__loupe1, .parallax__loupe2, titre_principal"
+      );
+      window.addEventListener("scroll", () => {
+        const scrollX = window.scrollX;
+        const scrollY = window.scrollY;
+        parallaxElements.forEach((element) => {
+          const speed =
+            parseFloat(
+              getComputedStyle(element).getPropertyValue("--parallax-speed")
+            ) || 0;
+          const directionX =
+            parseFloat(
+              getComputedStyle(element).getPropertyValue("--direction-x")
+            ) || 0;
+          const directionY =
+            parseFloat(
+              getComputedStyle(element).getPropertyValue("--direction-y")
+            ) || 1;
+          const flou =
+            parseFloat(getComputedStyle(element).getPropertyValue("--flou")) ||
+            1;
+          element.style.transform = `translate(${
+            scrollX * directionX * speed * 2
+          }px, ${scrollY * directionY * speed * 0.2}px)`;
+          element.style.filter = `blur(${flou * scrollY * 0.003}px)`;
+        });
+      });
+    </script>
+  </body>
+</html>

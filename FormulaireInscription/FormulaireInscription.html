@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../images/logo_white.svg" />
+    <!-- Logo d'onglet de Navigation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <link href="FormulaireInscription.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Police utilisé pour le Titre Principal-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/logo_black.svg" class="black" />
+          <img src="../images/logo_white.svg" class="white" />
+        </a>
+      </div>
+
+      <!-- Barre de Navigation -->
+      <nav>
+        <a href="../index.html#accueil">Accueil</a>
+        <a href="../index.html#propos">À Propos</a>
+        <a href="../index.html#escargots">Nos Escargots</a>
+        <a href="../index.html#calendrier">Calendrier</a>
+        <a href="../FormulaireContact/FormulaireContact.html">Contact</a>
+      </nav>
+
+      <!-- Bouton ☀️ / 🌙 -->
+      <div class="theme-switcher">
+        <input type="checkbox" id="nuit_jour" />
+        <label for="nuit_jour" class="nuit_jour_label"></label>
+      </div>
+    </header>
+    <a class="fauxheader">
+      <div>
+        <h1>Inscrivez-Vous</h1>
+        <p>Inscrivez-Vous sur notre site internet</p>
+      </div>
+    </a>
+
+    <!-- Formulaire d'inscription -->
+    <section>
+      <h2>Formulaire d'inscription</h2>
+      <fieldset>
+        <legend>Inscription</legend>
+        <form method="post">
+          <!-- Nom -->
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="Nom" placeholder="Nom" required />
+
+          <!-- Prénom -->
+          <label for="prenom">Prénom :</label>
+          <input
+            type="text"
+            id="prenom"
+            name="Prénom"
+            placeholder="Prénom"
+            required
+          />
+
+          <!-- Sexe -->
+          <div class="options">
+            <div class="genres">
+              <label>Sexe :</label>
+              <label class="lighter"
+                ><input type="radio" name="Sexe" value="Homme" required />
+                Homme</label
+              >
+              <label class="lighter"
+                ><input type="radio" name="Sexe" value="Femme" /> Femme</label
+              >
+              <label class="lighter"
+                ><input type="radio" name="Sexe" value="Autre" /> Autre</label
+              >
+            </div>
+          </div>
+
+          <!-- Adresse email -->
+          <label for="email">Adresse e-mail :</label>
+          <input
+            type="text"
+            id="email"
+            name="Email"
+            placeholder="Adresse e-mail"
+            required
+          />
+
+          <!-- Mot de passe -->
+          <label for="password">Mot de passe :</label>
+          <input
+            type="password"
+            id="password"
+            name="Mot_de_passe"
+            placeholder="Mot de passe"
+            required
+          />
+
+          <!-- Confirmation du mot de passe -->
+          <label for="confirm-password">Confirmez le mot de passe :</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="Confirmation_mot_de_passe"
+            placeholder="Confirmez le mot de passe"
+            required
+          />
+
+          <!-- Préférences -->
+          <div class="options">
+            <label>Préférences :</label>
+            <label class="lighter"
+              ><input type="checkbox" name="news" value="Abonnement" />
+              S'abonner à la newsletter</label
+            >
+            <label class="lighter"
+              ><input type="checkbox" name="terms" value="Accept" required />
+              J'accepte les conditions générales</label
+            >
+          </div>
+
+          <!-- Pays -->
+          <label for="pays">Pays :</label>
+          <select id="pays" name="Pays" required>
+            <option value="" disabled selected>
+              -- Sélectionnez votre pays --
+            </option>
+            <option value="France">France</option>
+            <option value="Belgique">Belgique</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Canada">Canada</option>
+            <option value="Etat-Unis">Etat-Unis</option>
+            <option value="Royaume-Unis">Royaume-Unis</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Italie">Italie</option>
+            <option value="Algérie">Algérie</option>
+            <option value="Russie">Russie</option>
+            <option value="Chine">Chine</option>
+            <option value="Japon">Japon</option>
+            <option value="Australie">Australie</option>
+            <option value="Nouvelle-Zélande">Nouvelle-Zélande</option>
+            <option value="Afrique-du-Sud">Afrique du Sud</option>
+            <option value="Brésil">Brésil</option>
+          </select>
+
+          <!-- Zone de texte -->
+          <label for="message">Message ou remarques :</label>
+          <textarea
+            id="message"
+            name="Message"
+            placeholder="Écrivez vos remarques ou questions ici..."
+          ></textarea>
+
+          <!-- Boutons -->
+          <button type="reset">Annuler</button>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </fieldset>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="haut-gauche" id="contacter">
+        <h2>Contactez - Nous !</h2>
+        <div class="Residence">
+          <a href="https://urlr.me/ce5WXz" target="_blank"
+            ><img
+              class="localisation"
+              src="../images/localisation.svg"
+              href="toto.html"
+          /></a>
+          <h3 class="emplacement">
+            <strong>Université de Lens, Département Informatique</strong
+            ><br />121 Rue de l'Université, 62100 Lens, France
+          </h3>
+        </div>
+        <div class="reseaux1">
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="insta" src="../images/insta.svg"
+          /></a>
+          <h3 class="Reseaux" id="iut">@slow_go_show_off</h3>
+          <br />
+        </div>
+        <div class="reseaux2">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img class="face" src="../images/facebook.svg"
+          /></a>
+          <h3 class="Reseaux" id="iut">@slow_go_show</h3>
+          <br />
+        </div>
+        <div class="reseaux3">
+          <a href="https://www.x.com" target="_blank"
+            ><img class="x" src="../images/x.svg"
+          /></a>
+          <h3 class="Reseaux" id="iut">@slow_go_show_off​iciel</h3>
+        </div>
+      </div>
+
+      <div class="haut-droit">
+        <p id="gauche">
+          Qui<br />sera<br />
+          le<br />plus<br />
+          rapide
+        </p>
+        <img src="../images/logo_white.svg" />
+        <p id="droite">
+          Ou<br />plutot<br />
+          le<br />moins<br />
+          lent
+        </p>
+      </div>
+
+      <div class="bas-gauche">
+        <img class="pixl_escargot" src="../images/Designer.svg" />
+        <h3>
+          Nous<br />recherchons<br />des athlètes<br />de tout<br />
+          genre !
+        </h3>
+      </div>
+
+      <div class="bas-droit">
+        <h2>Informations Légales:</h2>
+        <br />
+        <a href="Mentions_legales.html">Mentions Légales</a><br />
+        <a href="politique_confidentialite.html">Politique de Confidentialité</a
+        ><br />
+        <a href="politique_cookies.html">Politique en matière de cookies</a
+        ><br />
+        <a href="condition_g.html">Conditions générales d'utilisation</a><br />
+        <a href="droits_dauteur.html">Droits d'auteurs</a>
+      </div>
+    </div>
+
+    <!-- Modalité -->
+    <footer>
+      <p class="Modalite">
+        ⚠️ Cette page web a été réalisée uniquement dans un cadre
+        universitaire.<br />
+        Toute interprétation ou action basée sur un contenu réel ne serait que
+        fortuite. ⚠️
+      </p>
+      <h4 class="copyright">
+        Tous droits réservés<br />&copy; 2024 Slow Go Show
+      </h4>
+    </footer>
+  </body>
+</html>
