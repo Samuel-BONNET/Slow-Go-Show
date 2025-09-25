@@ -26,13 +26,14 @@ Ce projet a été imaginé et développé par moi et mon coéquipié, avec une a
 
 ## 🛠️ Technologies utilisées
 - **HTML5** – Structure du site  
-- **CSS3** – Mise en page & animations  
-- **JavaScript** – Interactions et dynamisme  
+- **CSS3** – Mise en page, parallax & animations  
+- **JavaScript** – Interactions et dynamisme basique
 
 ---
 
 ## 👥 Équipe du projet
 - **Luc** – Idée, développement & intégration  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/luc-ba%C3%AFr-napierala-05539a36a)
 ---
 
 ## 📜 Licence
